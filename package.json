@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"bump": "standard-version --skip.tag",
 		"release": "git flow release start `sh scripts/nextver.sh`",
+		"bump": "standard-version --skip.tag",
 		"publish": "git flow release finish `sh scripts/ver.sh`"
 	},
 	"keywords": [],
