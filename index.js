@@ -1,8 +1,8 @@
 const cors_proxy = require('cors-anywhere')
 require('dotenv').config()
 
-const PORT = process.env.PORT
-const HOST = process.env.HOST
+const PORT = process.env.PORT || 8080
+const HOST = process.env.HOST || '127.0.0.1'
 
 try {
 	cors_proxy
